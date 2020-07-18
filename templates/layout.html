@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+      <meta name="viewport" content"width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} - Aaaa</title>
+  </head>
+  <body>
+    <div class="row">
+
+    <div class="col-12 header">
+      
+    <h1>{% block heading %} {% endblock %} </h1>
+  </div>
+
+   </div>
+    <div class="row">
+
+      <div class="col-3 menu">
+        <ul>
+          <li>Uno</li>
+          <li>Dos</li>
+          <li>Tres</li>
+          <li>Cuatro</li>
+          <li>Cinco</li>
+        </ul>
+       </div>
+         <div class="col-9 content">{% block content %} {% endblock %}</div>
+
+    </div>
+
+  </body>
+</html>
